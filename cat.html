@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            background-color: #200000;
+            margin: 0;
+        }
+
+        .image-container {
+            perspective:10000px;
+        }
+
+        .animated-image {
+            display: block;
+            width: 300px;
+            height: 200px;
+            object-fit:cover;
+            border-radius: 15px;
+            transition: transform 0.5s ease, box-shadow 0.90s ease;
+            box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.2);
+        }
+
+        .animated-image:hover {
+            transform:scale(1.3) rotate(10deg);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+     img button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="/uwp3855758.jpeg" alt="Sample Image" class="animated-image">
+        <button type="" class="ani">submit</button>
+    </div>
+</body>
+</html>
+
+
